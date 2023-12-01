@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FA2E1B7B-5CF0-4643-B5F1-7A7BD869C79D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EBBB1B37-025D-42B7-916E-E331ED28E99A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Team6_MAPD714_Project-Milestone3/dBManager/BookingDbManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "insert(booking:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EBBB1B37-025D-42B7-916E-E331ED28E99A - 84caa57a950f5901"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Team6_MAPD714_Project_Milestone3.BookingDbManager.insert(booking: Team6_MAPD714_Project_Milestone3.Booking) -&gt; Swift.String"
+                  moduleName = "Team6_MAPD714_Project-Milestone3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/srijeetsthapit/Ios/Team6_MAPD714_Project-Milestone3/Team6_MAPD714_Project-Milestone3/dBManager/BookingDbManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "448">
+               </Location>
+               <Location
+                  uuid = "EBBB1B37-025D-42B7-916E-E331ED28E99A - 84caa57a950f5901"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Team6_MAPD714_Project_Milestone3.BookingDbManager.insert(booking: Team6_MAPD714_Project_Milestone3.Booking) -&gt; Swift.String"
+                  moduleName = "Team6_MAPD714_Project-Milestone3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/srijeetsthapit/Ios/Team6_MAPD714_Project-Milestone3/Team6_MAPD714_Project-Milestone3/dBManager/BookingDbManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "544">
+               </Location>
+               <Location
+                  uuid = "EBBB1B37-025D-42B7-916E-E331ED28E99A - 84caa57a950f5901"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Team6_MAPD714_Project_Milestone3.BookingDbManager.insert(booking: Team6_MAPD714_Project_Milestone3.Booking) -&gt; Swift.String"
+                  moduleName = "Team6_MAPD714_Project-Milestone3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/srijeetsthapit/Ios/Team6_MAPD714_Project-Milestone3/Team6_MAPD714_Project-Milestone3/dBManager/BookingDbManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "376">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6FD7128A-2BBC-4176-A7C9-5758BD83CB3E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Team6_MAPD714_Project-Milestone3/dBManager/BookingDbManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "insert(booking:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6FD7128A-2BBC-4176-A7C9-5758BD83CB3E - 84caa57a950f55c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Team6_MAPD714_Project_Milestone3.BookingDbManager.insert(booking: Team6_MAPD714_Project_Milestone3.Booking) -&gt; Swift.String"
+                  moduleName = "Team6_MAPD714_Project-Milestone3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/srijeetsthapit/Ios/Team6_MAPD714_Project-Milestone3/Team6_MAPD714_Project-Milestone3/dBManager/BookingDbManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "6152">
+               </Location>
+               <Location
+                  uuid = "6FD7128A-2BBC-4176-A7C9-5758BD83CB3E - 84caa57a950f55c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Team6_MAPD714_Project_Milestone3.BookingDbManager.insert(booking: Team6_MAPD714_Project_Milestone3.Booking) -&gt; Swift.String"
+                  moduleName = "Team6_MAPD714_Project-Milestone3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/srijeetsthapit/Ios/Team6_MAPD714_Project-Milestone3/Team6_MAPD714_Project-Milestone3/dBManager/BookingDbManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "6252">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9BD27DB7-CCA0-4927-9AC5-CE29E2DAD93B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Team6_MAPD714_Project-Milestone3/dBManager/BookingDbManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "insert(booking:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9BD27DB7-CCA0-4927-9AC5-CE29E2DAD93B - 84caa57a950f55a5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Team6_MAPD714_Project_Milestone3.BookingDbManager.insert(booking: Team6_MAPD714_Project_Milestone3.Booking) -&gt; Swift.String"
+                  moduleName = "Team6_MAPD714_Project-Milestone3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/srijeetsthapit/Ios/Team6_MAPD714_Project-Milestone3/Team6_MAPD714_Project-Milestone3/dBManager/BookingDbManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110"
+                  offsetFromSymbolStart = "6384">
+               </Location>
+               <Location
+                  uuid = "9BD27DB7-CCA0-4927-9AC5-CE29E2DAD93B - 84caa57a950f55a5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Team6_MAPD714_Project_Milestone3.BookingDbManager.insert(booking: Team6_MAPD714_Project_Milestone3.Booking) -&gt; Swift.String"
+                  moduleName = "Team6_MAPD714_Project-Milestone3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/srijeetsthapit/Ios/Team6_MAPD714_Project-Milestone3/Team6_MAPD714_Project-Milestone3/dBManager/BookingDbManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110"
+                  offsetFromSymbolStart = "6488">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "356211D9-EC3B-4DC7-BAF7-8F0C65E50C36"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Team6_MAPD714_Project-Milestone3/dBManager/BookingDbManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "insert(booking:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4A0704A5-803C-4633-9753-0C3367E51104"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Team6_MAPD714_Project-Milestone3/dBManager/BookingDbManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "insert(booking:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B8B26B0E-571F-4301-850E-39B2987702DC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Team6_MAPD714_Project-Milestone3/dBManager/BookingDbManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "insert(booking:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D2EC6334-9D90-41CC-8DA1-94AE38522194"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Team6_MAPD714_Project-Milestone3/dBManager/BookingDbManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "insert(booking:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D2EC6334-9D90-41CC-8DA1-94AE38522194 - 84caa57a950f57b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Team6_MAPD714_Project_Milestone3.BookingDbManager.insert(booking: Team6_MAPD714_Project_Milestone3.Booking) -&gt; Swift.String"
+                  moduleName = "Team6_MAPD714_Project-Milestone3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/srijeetsthapit/Ios/Team6_MAPD714_Project-Milestone3/Team6_MAPD714_Project-Milestone3/dBManager/BookingDbManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "1588">
+               </Location>
+               <Location
+                  uuid = "D2EC6334-9D90-41CC-8DA1-94AE38522194 - 84caa57a950f57b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Team6_MAPD714_Project_Milestone3.BookingDbManager.insert(booking: Team6_MAPD714_Project_Milestone3.Booking) -&gt; Swift.String"
+                  moduleName = "Team6_MAPD714_Project-Milestone3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/srijeetsthapit/Ios/Team6_MAPD714_Project-Milestone3/Team6_MAPD714_Project-Milestone3/dBManager/BookingDbManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "4128">
+               </Location>
+               <Location
+                  uuid = "D2EC6334-9D90-41CC-8DA1-94AE38522194 - 84caa57a950f57b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Team6_MAPD714_Project_Milestone3.BookingDbManager.insert(booking: Team6_MAPD714_Project_Milestone3.Booking) -&gt; Swift.String"
+                  moduleName = "Team6_MAPD714_Project-Milestone3"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/srijeetsthapit/Ios/Team6_MAPD714_Project-Milestone3/Team6_MAPD714_Project-Milestone3/dBManager/BookingDbManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "2168">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "43756A21-8512-4100-9460-659FF78BC358"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Team6_MAPD714_Project-Milestone3/dBManager/BookingDbManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "insert(booking:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

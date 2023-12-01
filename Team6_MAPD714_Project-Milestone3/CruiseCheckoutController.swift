@@ -1,7 +1,7 @@
 //
 //  SelectCruiseController.swift
-//  Team6_MAPD714_Project-Milestone3
-//  *****Milestone 2*****
+//  Team6_MAPD714_Project-Milestone4
+//  *****Milestone 4*****
 //  *****Team6*****
 //  *****Team Members*****
 //  Srijeet Sthapit - 301365217
@@ -9,45 +9,71 @@
 //  Promish Khaniya - 301369717
 //
 //  Created by Srijeet Sthapit on 2023-10-29.
-//  Submitted on 2023-10-30
+//  Submitted on 2023-12-01
 import UIKit
 
 class CruiseCheckoutController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    // Struct for holding title and value for booking details
     struct Detail {
         let title: String
         let value: String
     }
     
-    //dummy dataset
-    let BookingDetails: [Detail] = [
-        Detail(title: "Name", value: "Srijeet Sthapit"),
-        Detail(title: "Email", value: "sthapitsrijeet@gmail.com"),
-        Detail(title: "Phone Number", value: "647 646 6464"),
-        Detail(title: "Address", value: "8 Sachems"),
-        Detail(title: "Country", value: "Canada"),
-        Detail(title: "Cruise", value: "Bahamas Cruise"),
-        Detail(title: "Cruise Duration", value: "3 Days 4 nights"),
-        Detail(title: "Adult", value: "2"),
-        Detail(title: "Child", value: "3"),
-        Detail(title: "Total Price", value: "$300"),
-        Detail(title: "Reserved for", value: "2023-12-12"),
-    ]
+    var bookingId: String?
+    var canNavigateBack: Bool = false
+    var BookingDetails: [Detail] = []
+    
+    var db = BookingDbManager() // Database manager for bookings
     
     @IBOutlet weak var table: UITableView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Hides the back button if navigation back is not allowed
+        if !canNavigateBack {
+            self.navigationItem.hidesBackButton = true
+        }
 
-        self.navigationItem.hidesBackButton = true
+        // Setting up the table view
         table.dataSource = self
         table.delegate = self
+        table.allowsSelection = false
+        
+        // Fetching booking details from the database and populating the BookingDetails array
+        if let data = db.getBookingById(id: bookingId!) {
+            let cruiseText = data.cruiseExtraCare ? "Yes" : "No"
+            populateBookingDetails(with: data, cruiseText: cruiseText)
+        }
+    }
+
+    // Populates the BookingDetails array with booking data
+    private func populateBookingDetails(with data: Booking, cruiseText: String) {
+        BookingDetails.append(Detail(title: "Name", value: data.name))
+        BookingDetails.append(Detail(title: "Email", value: data.email))
+        BookingDetails.append(Detail(title: "Phone Number", value: data.contactNumber))
+        BookingDetails.append(Detail(title: "Address", value: data.address))
+        BookingDetails.append(Detail(title: "Postal Code", value: data.postalCode))
+        BookingDetails.append(Detail(title: "State", value: data.state))
+        BookingDetails.append(Detail(title: "Country", value: data.country))
+        BookingDetails.append(Detail(title: "Cruise", value: data.cruiseName))
+        BookingDetails.append(Detail(title: "Cruise Duration", value: data.cruiseDuration))
+        BookingDetails.append(Detail(title: "Visiting Places", value: data.cruiseVisitingPlaces))
+        BookingDetails.append(Detail(title: "Adult", value: data.cruiseAdultCount))
+        BookingDetails.append(Detail(title: "Child", value: data.cruiseChildCount))
+        BookingDetails.append(Detail(title: "Total Price", value: data.cruiseTotalPrice))
+        BookingDetails.append(Detail(title: "Reserved for", value: data.cruiseReservationDate))
+        BookingDetails.append(Detail(title: "Need Extra Care", value: cruiseText))
+        BookingDetails.append(Detail(title: "Payment Method", value: data.cardType))
     }
     
-    //set table row count
+    // Table view data source method to set the number of rows
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return BookingDetails.count
     }
     
-    //set table value for rows
+    // Table view data source method to configure each cell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let selected = BookingDetails[indexPath.row]
         let cell = table.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! BookedTableViewCell
@@ -56,19 +82,22 @@ class CruiseCheckoutController: UIViewController, UITableViewDataSource, UITable
         return cell
     }
     
-    //set table row height size
+    // Table view delegate method to set the height for each row
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 40
     }
     
-    //navigation to home page
+    // Action method for the booking completed button
     @IBAction func bookingCompleted(_ sender: UIButton) {
-        let  storyboard = UIStoryboard(name:"Main", bundle:nil)
-        let screen = storyboard.instantiateViewController(withIdentifier: "cruiseHome") as! CruiseHomeController
-        screen.modalPresentationStyle = .fullScreen
-        self.navigationController?.pushViewController(screen, animated: true)
+        navigateToHomeScreen()
     }
-    
 
+    // Navigates to the home screen
+    private func navigateToHomeScreen() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let homeController = storyboard.instantiateViewController(withIdentifier: "cruiseHome") as! CruiseHomeController
+        homeController.modalPresentationStyle = .fullScreen
+        self.navigationController?.pushViewController(homeController, animated: true)
+    }
 }
 

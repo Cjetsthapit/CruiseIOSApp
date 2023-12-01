@@ -1,7 +1,7 @@
 //
 //  SelectCruiseController.swift
-//  Team6_MAPD714_Project-Milestone2
-//  *****Milestone 2*****
+//  Team6_MAPD714_Project-Milestone4
+//  *****Milestone 4*****
 //  *****Team6*****
 //  *****Team Members*****
 //  Srijeet Sthapit - 301365217
@@ -9,15 +9,16 @@
 //  Promish Khaniya - 301369717
 //
 //  Created by Srijeet Sthapit on 2023-10-29.
-//  Submitted on 2023-10-30
+//  Submitted on 2023-12-01
 
 import UIKit
 
 class CruiseDetailController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
-    
-    let cruiseImages = ["Cruise1","Cruise2","Cruise3","Cruise4","Cruise5"]
-    //reference objects for labels
+    // Array of image names for the cruise
+    let cruiseImages = ["Cruise1", "Cruise2", "Cruise3", "Cruise4", "Cruise5"]
+
+    // Outlets for various UI components
     @IBOutlet weak var cruiseTitle: UILabel!
     @IBOutlet weak var cruiseDescription: UILabel!
     @IBOutlet weak var cruiseVisitingPlaces: UILabel!
@@ -26,48 +27,59 @@ class CruiseDetailController: UIViewController, UICollectionViewDataSource, UICo
     @IBOutlet weak var cruiseChildPrice: UILabel!
     @IBOutlet weak var collection: UICollectionView!
     
-    //variable for passed data
-    var cName:String?
-    var cDescription:String?
-    var cVisitingPlaces:String?
-    var cDuration:String?
-    var cAdultPrice:String?
-    var cChildPrice:String?
+    // Variable to hold the selected cruise details
+    var selectedCruise: Cruise?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //setting label value
+        
+        // Setting up the collection view
         collection.dataSource = self
         collection.delegate = self
-        self.title = cName
-//        cruiseTitle.text = cName
-        cruiseDescription.text = cDescription
-        cruiseVisitingPlaces.text = cVisitingPlaces
-        cruiseDuration.text = cDuration
-        cruiseAdultPrice.text = "Adult: \(cAdultPrice ?? "0" )"
-        cruiseChildPrice.text = "Child: \(cChildPrice ?? "0")"
-
-        // Do any additional setup after loading the view.
+        
+        // Populating the UI with the selected cruise details
+        updateCruiseDetails()
     }
     
-    //collection number count
+    // Function to update the UI elements with cruise details
+    private func updateCruiseDetails() {
+        self.title = selectedCruise?.title
+        cruiseDescription.text = selectedCruise?.cruiseDescription
+        cruiseVisitingPlaces.text = selectedCruise?.visitingPlaces
+        cruiseDuration.text = selectedCruise?.duration
+        cruiseAdultPrice.text = "Adult: \(selectedCruise?.adultPrice ?? "0" )"
+        cruiseChildPrice.text = "Child: \(selectedCruise?.childPrice ?? "0")"
+    }
+    
+    // UICollectionViewDataSource method for item count
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cruiseImages.count
     }
     
-    //image set for collection
+    // UICollectionViewDataSource method to set up cells
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collection.dequeueReusableCell(withReuseIdentifier: "carouselCell", for: indexPath) as! CustomCollectionViewCell
         cell.cruiseImageCarousel.image = UIImage(named: cruiseImages[indexPath.row])
         return cell
     }
     
-    //setting image size for collection view
+
+    // UICollectionViewDelegateFlowLayout method to set item size
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collection.frame.width, height: collection.frame.height)
+        return CGSize(width: 400, height: 200)
     }
-    
 
+    // Action for navigating to the guest information screen
+    @IBAction func onNavigateToGuest(_ sender: Any) {
+        navigateToGuestScreen()
+    }
 
+    // Function to handle navigation to the CruiseGuestController
+    private func navigateToGuestScreen() {
+        let storyboard = UIStoryboard(name:"Main", bundle:nil)
+        let guestScreen = storyboard.instantiateViewController(withIdentifier: "cruiseGuest") as! CruiseGuestController
+        guestScreen.modalPresentationStyle = .fullScreen
+        guestScreen.selectedCruise = selectedCruise
+        self.navigationController?.pushViewController(guestScreen, animated: true)
+    }
 }
-

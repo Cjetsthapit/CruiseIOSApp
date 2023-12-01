@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A771DC92B1A1F2B0067B587 /* CruiseBookingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A771DC82B1A1F2B0067B587 /* CruiseBookingListController.swift */; };
+		5A771DCB2B1A21120067B587 /* CustomBookingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A771DCA2B1A21120067B587 /* CustomBookingList.swift */; };
+		5A771DCD2B1A694F0067B587 /* CruiseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A771DCC2B1A694F0067B587 /* CruiseData.swift */; };
+		5A771DD02B1A6B5D0067B587 /* utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A771DCF2B1A6B5D0067B587 /* utilities.swift */; };
 		5A9605312AF8439500B72C82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9605302AF8439500B72C82 /* AppDelegate.swift */; };
 		5A9605332AF8439500B72C82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9605322AF8439500B72C82 /* SceneDelegate.swift */; };
-		5A9605352AF8439500B72C82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9605342AF8439500B72C82 /* ViewController.swift */; };
 		5A9605382AF8439500B72C82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9605362AF8439500B72C82 /* Main.storyboard */; };
 		5A96053A2AF8439700B72C82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A9605392AF8439700B72C82 /* Assets.xcassets */; };
 		5A96053D2AF8439700B72C82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A96053B2AF8439700B72C82 /* LaunchScreen.storyboard */; };
+		5AA666202B0EF67C0046CACE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA6661F2B0EF67C0046CACE /* User.swift */; };
+		5AA666232B0EF73F0046CACE /* UserDbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA666222B0EF73F0046CACE /* UserDbManager.swift */; };
+		5ABA24592B11997600632F2E /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA24582B11997600632F2E /* Booking.swift */; };
+		5ABA245B2B119FA800632F2E /* BookingDbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA245A2B119FA800632F2E /* BookingDbManager.swift */; };
+		5ABA245E2B143D1800632F2E /* Cruise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABA245D2B143D1800632F2E /* Cruise.swift */; };
 		5ABC37E12B01BE4900060CDF /* CruiseSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABC37E02B01BE4900060CDF /* CruiseSelectionController.swift */; };
 		5ABC37E52B01C03C00060CDF /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABC37E42B01C03C00060CDF /* CustomTableViewCell.swift */; };
 		5ABC37E72B01D6A400060CDF /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABC37E62B01D6A400060CDF /* CustomCollectionViewCell.swift */; };
@@ -27,14 +35,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A771DC82B1A1F2B0067B587 /* CruiseBookingListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CruiseBookingListController.swift; sourceTree = "<group>"; };
+		5A771DCA2B1A21120067B587 /* CustomBookingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBookingList.swift; sourceTree = "<group>"; };
+		5A771DCC2B1A694F0067B587 /* CruiseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CruiseData.swift; sourceTree = "<group>"; };
+		5A771DCF2B1A6B5D0067B587 /* utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilities.swift; sourceTree = "<group>"; };
 		5A96052D2AF8439500B72C82 /* Team6_MAPD714_Project-Milestone3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Team6_MAPD714_Project-Milestone3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A9605302AF8439500B72C82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A9605322AF8439500B72C82 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5A9605342AF8439500B72C82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5A9605372AF8439500B72C82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A9605392AF8439700B72C82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A96053C2AF8439700B72C82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A96053E2AF8439700B72C82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AA6661F2B0EF67C0046CACE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5AA666222B0EF73F0046CACE /* UserDbManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDbManager.swift; sourceTree = "<group>"; };
+		5ABA24582B11997600632F2E /* Booking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
+		5ABA245A2B119FA800632F2E /* BookingDbManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDbManager.swift; sourceTree = "<group>"; };
+		5ABA245D2B143D1800632F2E /* Cruise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cruise.swift; sourceTree = "<group>"; };
 		5ABC37E02B01BE4900060CDF /* CruiseSelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CruiseSelectionController.swift; sourceTree = "<group>"; };
 		5ABC37E42B01C03C00060CDF /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		5ABC37E62B01D6A400060CDF /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -59,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A771DCE2B1A6B4A0067B587 /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5A771DCF2B1A6B5D0067B587 /* utilities.swift */,
+			);
+			path = utilities;
+			sourceTree = "<group>";
+		};
 		5A9605242AF8439500B72C82 = {
 			isa = PBXGroup;
 			children = (
@@ -78,26 +102,58 @@
 		5A96052F2AF8439500B72C82 /* Team6_MAPD714_Project-Milestone3 */ = {
 			isa = PBXGroup;
 			children = (
+				5A771DCE2B1A6B4A0067B587 /* utilities */,
+				5ABA245C2B143D0400632F2E /* structs */,
+				5AA666212B0EF7230046CACE /* dBManager */,
+				5AA6661E2B0EF6520046CACE /* entities */,
 				5A9605302AF8439500B72C82 /* AppDelegate.swift */,
 				5A9605322AF8439500B72C82 /* SceneDelegate.swift */,
+				5ABC37EE2B030AA400060CDF /* RegisterController.swift */,
+				5ABC37EC2B030A4100060CDF /* LoginController.swift */,
+				5ABC37F22B030AF800060CDF /* CruiseHomeController.swift */,
 				5ABC37E02B01BE4900060CDF /* CruiseSelectionController.swift */,
-				5A9605342AF8439500B72C82 /* ViewController.swift */,
+				5ABC37F62B030B3100060CDF /* CruiseDetailController.swift */,
+				5ABC37F42B030B1800060CDF /* CruiseGuestController.swift */,
+				5ABC37F02B030AD400060CDF /* CruisePaymentController.swift */,
+				5ABC37EA2B0309D600060CDF /* CruiseCheckoutController.swift */,
+				5A771DC82B1A1F2B0067B587 /* CruiseBookingListController.swift */,
 				5A9605362AF8439500B72C82 /* Main.storyboard */,
 				5A9605392AF8439700B72C82 /* Assets.xcassets */,
 				5A96053B2AF8439700B72C82 /* LaunchScreen.storyboard */,
 				5A96053E2AF8439700B72C82 /* Info.plist */,
-				5ABC37E42B01C03C00060CDF /* CustomTableViewCell.swift */,
+				5A771DCA2B1A21120067B587 /* CustomBookingList.swift */,
 				5ABC37E62B01D6A400060CDF /* CustomCollectionViewCell.swift */,
+				5ABC37E42B01C03C00060CDF /* CustomTableViewCell.swift */,
 				5ABC37E82B01E4B500060CDF /* BookedTableViewCell.swift */,
-				5ABC37EA2B0309D600060CDF /* CruiseCheckoutController.swift */,
-				5ABC37EC2B030A4100060CDF /* LoginController.swift */,
-				5ABC37EE2B030AA400060CDF /* RegisterController.swift */,
-				5ABC37F02B030AD400060CDF /* CruisePaymentController.swift */,
-				5ABC37F22B030AF800060CDF /* CruiseHomeController.swift */,
-				5ABC37F42B030B1800060CDF /* CruiseGuestController.swift */,
-				5ABC37F62B030B3100060CDF /* CruiseDetailController.swift */,
 			);
 			path = "Team6_MAPD714_Project-Milestone3";
+			sourceTree = "<group>";
+		};
+		5AA6661E2B0EF6520046CACE /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				5AA6661F2B0EF67C0046CACE /* User.swift */,
+				5ABA24582B11997600632F2E /* Booking.swift */,
+			);
+			path = entities;
+			sourceTree = "<group>";
+		};
+		5AA666212B0EF7230046CACE /* dBManager */ = {
+			isa = PBXGroup;
+			children = (
+				5AA666222B0EF73F0046CACE /* UserDbManager.swift */,
+				5ABA245A2B119FA800632F2E /* BookingDbManager.swift */,
+			);
+			path = dBManager;
+			sourceTree = "<group>";
+		};
+		5ABA245C2B143D0400632F2E /* structs */ = {
+			isa = PBXGroup;
+			children = (
+				5ABA245D2B143D1800632F2E /* Cruise.swift */,
+				5A771DCC2B1A694F0067B587 /* CruiseData.swift */,
+			);
+			path = structs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,20 +227,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A9605352AF8439500B72C82 /* ViewController.swift in Sources */,
+				5ABA245B2B119FA800632F2E /* BookingDbManager.swift in Sources */,
 				5ABC37E72B01D6A400060CDF /* CustomCollectionViewCell.swift in Sources */,
 				5ABC37ED2B030A4100060CDF /* LoginController.swift in Sources */,
 				5ABC37E92B01E4B500060CDF /* BookedTableViewCell.swift in Sources */,
 				5ABC37E12B01BE4900060CDF /* CruiseSelectionController.swift in Sources */,
 				5A9605312AF8439500B72C82 /* AppDelegate.swift in Sources */,
+				5ABA24592B11997600632F2E /* Booking.swift in Sources */,
 				5ABC37EF2B030AA400060CDF /* RegisterController.swift in Sources */,
 				5ABC37F72B030B3100060CDF /* CruiseDetailController.swift in Sources */,
+				5AA666202B0EF67C0046CACE /* User.swift in Sources */,
 				5A9605332AF8439500B72C82 /* SceneDelegate.swift in Sources */,
+				5A771DCB2B1A21120067B587 /* CustomBookingList.swift in Sources */,
 				5ABC37EB2B0309D600060CDF /* CruiseCheckoutController.swift in Sources */,
 				5ABC37F32B030AF800060CDF /* CruiseHomeController.swift in Sources */,
 				5ABC37F52B030B1800060CDF /* CruiseGuestController.swift in Sources */,
+				5A771DCD2B1A694F0067B587 /* CruiseData.swift in Sources */,
+				5A771DD02B1A6B5D0067B587 /* utilities.swift in Sources */,
+				5A771DC92B1A1F2B0067B587 /* CruiseBookingListController.swift in Sources */,
 				5ABC37E52B01C03C00060CDF /* CustomTableViewCell.swift in Sources */,
+				5AA666232B0EF73F0046CACE /* UserDbManager.swift in Sources */,
 				5ABC37F12B030AD400060CDF /* CruisePaymentController.swift in Sources */,
+				5ABA245E2B143D1800632F2E /* Cruise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

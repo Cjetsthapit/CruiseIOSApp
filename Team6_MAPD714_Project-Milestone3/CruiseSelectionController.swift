@@ -1,150 +1,87 @@
 //
 //  CruiseSelection.swift
-//  Team6_MAPD714_Project-Milestone3
+//  Team6_MAPD714_Project-Milestone4
+//  *****Milestone 4*****
+//  *****Team6*****
+//  *****Team Members*****
+//  Srijeet Sthapit - 301365217
+//  Abi Chitrakar - 301369773
+//  Promish Khaniya - 301369717
 //
-//  Created by Srijeet Sthapit on 2023-11-12.
-//
+//  Created by Srijeet Sthapit on 2023-10-29.
+//  Submitted on 2023-12-01
 
 import UIKit
 
 class CruiseSelectionController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    // Outlets for the table and search bar
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
-    struct Cruise {
-        let title: String
-        let imageName: String
-        let cruiseDescription: String
-        let visitingPlaces: String
-        let durationDays: String
-        let durationNight: String
-        let duration: String
-        let adultPrice: String
-        let childPrice: String
-    }
+    //setting cruise list
+    let cruiseArray: [Cruise] = CruiseData.allCruises
     
-    let cruiseArray: [Cruise] = [
-        Cruise(title: "Bahamas Cruise" ,
-               imageName: "Cruise1",
-               cruiseDescription:"Bhamas Surf, sand and sun await on a Bahamas cruise. Indulge in rest and relaxation while lounging on unspoiled beaches that offer breathtaking views of the Atlantic Ocean.",
-               visitingPlaces:"Nassau, Freeport, Grand Bahama Island, Half Moon Cay (Private Island), CocoCay (Private Island)",
-               durationDays: "3", 
-               durationNight:"2",
-               duration:"3 days 2 nights",
-               adultPrice:"300",
-               childPrice: "200"
-              ),
-        Cruise(title: "Cuba Cruise" , imageName: "Cruise2",
-               cruiseDescription:"Cuba Surf, sand and sun await on a Bahamas cruise. Indulge in rest and relaxation while lounging on unspoiled beaches that offer breathtaking views of the Atlantic Ocean.",
-               visitingPlaces:"Nassau, Freeport, Grand Bahama Island, Half Moon Cay (Private Island), CocoCay (Private Island)",
-               durationDays: "3",
-               durationNight:"2",
-               duration:"3 days 2 nights",
-               adultPrice:"300",
-               childPrice: "200"),
-        Cruise(title: "Caribbean Cruise" , imageName: "Cruise3",
-               cruiseDescription:"Caribbean Surf, sand and sun await on a Bahamas cruise. Indulge in rest and relaxation while lounging on unspoiled beaches that offer breathtaking views of the Atlantic Ocean.",
-               visitingPlaces:"Nassau, Freeport, Grand Bahama Island, Half Moon Cay (Private Island), CocoCay (Private Island)",
-               durationDays: "3",
-               durationNight:"2",
-               duration:"5 days 4 nights",
-               adultPrice:"300",
-               childPrice: "200"),
-        Cruise(title: "Sampler Cruise" , imageName: "Cruise4",
-               cruiseDescription:"Sampler Surf, sand and sun await on a Bahamas cruise. Indulge in rest and relaxation while lounging on unspoiled beaches that offer breathtaking views of the Atlantic Ocean.",
-               visitingPlaces:"Nassau, Freeport, Grand Bahama Island, Half Moon Cay (Private Island), CocoCay (Private Island)",
-               durationDays: "3",
-               durationNight:"2",
-               duration:"8 days 9 nights",
-               adultPrice:"300",
-               childPrice: "200"),
-        Cruise(title: "Star Cruise" , imageName: "Cruise5",
-               cruiseDescription:"Star Surf, sand and sun await on a Bahamas cruise. Indulge in rest and relaxation while lounging on unspoiled beaches that offer breathtaking views of the Atlantic Ocean.",
-               visitingPlaces:"Nassau, Freeport, Grand Bahama Island, Half Moon Cay (Private Island), CocoCay (Private Island)",
-               durationDays: "3",
-               durationNight:"2",
-               duration:"7 days 7 nights",
-               adultPrice:"200",
-               childPrice: "100"),
-        Cruise(title: "Atlantis Cruise" , imageName: "Cruise1",
-               cruiseDescription:"Atlantis Surf, sand and sun await on a Bahamas cruise. Indulge in rest and relaxation while lounging on unspoiled beaches that offer breathtaking views of the Atlantic Ocean.",
-               visitingPlaces:"Nassau, Freeport, Grand Bahama Island, Half Moon Cay (Private Island), CocoCay (Private Island)",
-               durationDays: "3",
-               durationNight:"2",
-               duration:"3 days 4 nights",
-               adultPrice:"300",
-               childPrice: "200"),
-        Cruise(title: "Pacific Cruise" , imageName: "Cruise2",
-               cruiseDescription:"Pacific Surf, sand and sun await on a Bahamas cruise. Indulge in rest and relaxation while lounging on unspoiled beaches that offer breathtaking views of the Atlantic Ocean.",
-               visitingPlaces:"Nassau, Freeport, Grand Bahama Island, Half Moon Cay (Private Island), CocoCay (Private Island)",
-               durationDays: "3",
-               durationNight:"2",
-               duration:"4 days 3 nights",
-               adultPrice:"300",
-               childPrice: "200"),
-    ]
-    
+    // Array for storing filtered cruises based on search
     var filteredCruises: [Cruise] = []
+    
+    // Setting up the view controller
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // Assigning table data source and delegate to self
         table.dataSource = self
         table.delegate = self
     }
     
-    //setting table row count
+    // Number of rows in the table
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // Return count based on whether the search bar is used or not
         return searchBar.text?.isEmpty ?? true ? cruiseArray.count : filteredCruises.count
     }
-
-    //filling table values
+    
+    // Configuring each cell in the table
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // Choosing the right cruise array based on search bar use
         let selected = searchBar.text?.isEmpty ?? true ? cruiseArray[indexPath.row] : filteredCruises[indexPath.row]
+        // Dequeueing and setting up the cell
         let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTableViewCell
         cell.cruiseName.text = selected.title
         cell.cruiseImage.image = UIImage(named: selected.imageName)
         cell.cruiseDuration.text = selected.duration
         return cell
     }
-
-    //setting table row height
+    
+    // Setting the row height in the table
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 140
     }
     
-    //table row click function
+    // Handling selection of a table row
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-         let selectedCruise = cruiseArray[indexPath.row]
-        let  storyboard = UIStoryboard(name:"Main", bundle:nil)
+        // Getting the selected cruise
+        let selectedCruise = searchBar.text?.isEmpty ?? true ? cruiseArray[indexPath.row] : filteredCruises[indexPath.row]
+        // Navigating to the details screen
+        let storyboard = UIStoryboard(name:"Main", bundle:nil)
         let screen = storyboard.instantiateViewController(withIdentifier: "cruiseDetail") as! CruiseDetailController
         screen.modalPresentationStyle = .fullScreen
-        screen.cName = selectedCruise.title
-        screen.cDescription = selectedCruise.cruiseDescription
-        screen.cVisitingPlaces = selectedCruise.visitingPlaces
-        screen.cDuration = selectedCruise.duration
-        screen.cAdultPrice = selectedCruise.adultPrice
-        screen.cChildPrice = selectedCruise.childPrice
+        screen.selectedCruise = selectedCruise
         self.navigationController?.pushViewController(screen, animated: true)
-     }
+    }
 }
 
 
-//extension of CruiseSelction for search bar
+// Extension for CruiseSelectionController to handle search bar functionality
 extension CruiseSelectionController: UISearchBarDelegate {
+    // Updating the list as the user types in the search bar
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if searchText.isEmpty {
-            filteredCruises = cruiseArray
-        } else {
-            filteredCruises = cruiseArray.filter { cruise in
-                return cruise.title.lowercased().contains(searchText.lowercased())
-            }
-        }
+        filteredCruises = searchText.isEmpty ? cruiseArray : cruiseArray.filter { $0.title.lowercased().contains(searchText.lowercased()) }
         table.reloadData()
     }
-
+    
+    // Dismissing the keyboard when the search button is clicked
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchBar.resignFirstResponder() 
+        searchBar.resignFirstResponder()
     }
 }
 

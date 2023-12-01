@@ -1,5 +1,5 @@
 //
-//  BookedTableViewCell.swift
+//  CustomBookingList.swift
 //  Team6_MAPD714_Project-Milestone4
 //  *****Milestone 4*****
 //  *****Team6*****
@@ -13,8 +13,8 @@
 
 import UIKit
 
-class BookedTableViewCell: UITableViewCell {
+class CustomBookingList: UITableViewCell {
 
-    @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var value: UILabel!
+    @IBOutlet weak var reservationDate: UILabel!
+    @IBOutlet weak var cruiseName: UILabel!
 }
