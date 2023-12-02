@@ -61,7 +61,7 @@ class RegisterController: UIViewController {
           alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
               if isDismiss {
                   let  storyboard = UIStoryboard(name:"Main", bundle:nil)
-                  let screen = storyboard.instantiateViewController(withIdentifier: "cruiseHome") as! CruiseHomeController
+                  let screen = storyboard.instantiateViewController(withIdentifier: "login") as! LoginController
                   screen.modalPresentationStyle = .fullScreen
                   self.navigationController?.pushViewController(screen, animated: true)
               }
