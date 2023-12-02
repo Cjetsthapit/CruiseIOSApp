@@ -39,7 +39,7 @@
 		5A771DCA2B1A21120067B587 /* CustomBookingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBookingList.swift; sourceTree = "<group>"; };
 		5A771DCC2B1A694F0067B587 /* CruiseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CruiseData.swift; sourceTree = "<group>"; };
 		5A771DCF2B1A6B5D0067B587 /* utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilities.swift; sourceTree = "<group>"; };
-		5A96052D2AF8439500B72C82 /* Team6_MAPD714_Project-Milestone3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Team6_MAPD714_Project-Milestone3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A96052D2AF8439500B72C82 /* Team6_MAPD714_Project-Milestone4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Team6_MAPD714_Project-Milestone4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A9605302AF8439500B72C82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A9605322AF8439500B72C82 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5A9605372AF8439500B72C82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 		5A9605242AF8439500B72C82 = {
 			isa = PBXGroup;
 			children = (
-				5A96052F2AF8439500B72C82 /* Team6_MAPD714_Project-Milestone3 */,
+				5A96052F2AF8439500B72C82 /* Team6_MAPD714_Project-Milestone4 */,
 				5A96052E2AF8439500B72C82 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,12 +94,12 @@
 		5A96052E2AF8439500B72C82 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5A96052D2AF8439500B72C82 /* Team6_MAPD714_Project-Milestone3.app */,
+				5A96052D2AF8439500B72C82 /* Team6_MAPD714_Project-Milestone4.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5A96052F2AF8439500B72C82 /* Team6_MAPD714_Project-Milestone3 */ = {
+		5A96052F2AF8439500B72C82 /* Team6_MAPD714_Project-Milestone4 */ = {
 			isa = PBXGroup;
 			children = (
 				5A771DCE2B1A6B4A0067B587 /* utilities */,
@@ -126,7 +126,7 @@
 				5ABC37E42B01C03C00060CDF /* CustomTableViewCell.swift */,
 				5ABC37E82B01E4B500060CDF /* BookedTableViewCell.swift */,
 			);
-			path = "Team6_MAPD714_Project-Milestone3";
+			path = "Team6_MAPD714_Project-Milestone4";
 			sourceTree = "<group>";
 		};
 		5AA6661E2B0EF6520046CACE /* entities */ = {
@@ -159,9 +159,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5A96052C2AF8439500B72C82 /* Team6_MAPD714_Project-Milestone3 */ = {
+		5A96052C2AF8439500B72C82 /* Team6_MAPD714_Project-Milestone4 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A9605412AF8439700B72C82 /* Build configuration list for PBXNativeTarget "Team6_MAPD714_Project-Milestone3" */;
+			buildConfigurationList = 5A9605412AF8439700B72C82 /* Build configuration list for PBXNativeTarget "Team6_MAPD714_Project-Milestone4" */;
 			buildPhases = (
 				5A9605292AF8439500B72C82 /* Sources */,
 				5A96052A2AF8439500B72C82 /* Frameworks */,
@@ -171,9 +171,9 @@
 			);
 			dependencies = (
 			);
-			name = "Team6_MAPD714_Project-Milestone3";
+			name = "Team6_MAPD714_Project-Milestone4";
 			productName = "Team6_MAPD714_Project-Milestone3";
-			productReference = 5A96052D2AF8439500B72C82 /* Team6_MAPD714_Project-Milestone3.app */;
+			productReference = 5A96052D2AF8439500B72C82 /* Team6_MAPD714_Project-Milestone4.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -191,7 +191,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5A9605282AF8439500B72C82 /* Build configuration list for PBXProject "Team6_MAPD714_Project-Milestone3" */;
+			buildConfigurationList = 5A9605282AF8439500B72C82 /* Build configuration list for PBXProject "Team6_MAPD714_Project-Milestone4" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -204,7 +204,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5A96052C2AF8439500B72C82 /* Team6_MAPD714_Project-Milestone3 */,
+				5A96052C2AF8439500B72C82 /* Team6_MAPD714_Project-Milestone4 */,
 			);
 		};
 /* End PBXProject section */
@@ -401,7 +401,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Team6_MAPD714_Project-Milestone3/Info.plist";
+				INFOPLIST_FILE = "Team6_MAPD714_Project-Milestone4/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -428,7 +428,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Team6_MAPD714_Project-Milestone3/Info.plist";
+				INFOPLIST_FILE = "Team6_MAPD714_Project-Milestone4/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -450,7 +450,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5A9605282AF8439500B72C82 /* Build configuration list for PBXProject "Team6_MAPD714_Project-Milestone3" */ = {
+		5A9605282AF8439500B72C82 /* Build configuration list for PBXProject "Team6_MAPD714_Project-Milestone4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A96053F2AF8439700B72C82 /* Debug */,
@@ -459,7 +459,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A9605412AF8439700B72C82 /* Build configuration list for PBXNativeTarget "Team6_MAPD714_Project-Milestone3" */ = {
+		5A9605412AF8439700B72C82 /* Build configuration list for PBXNativeTarget "Team6_MAPD714_Project-Milestone4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A9605422AF8439700B72C82 /* Debug */,
