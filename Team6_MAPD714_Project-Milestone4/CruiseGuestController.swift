@@ -89,15 +89,14 @@ class CruiseGuestController: UIViewController {
         if isValidForNavigation() {
             navigateToPayment()
         } else {
-            showAlert(message: "Please enter adult and child count")
+            showAlert(message: "Adult count is mandatory")
         }
     }
     
     // Validates if the navigation to payment is allowed
     private func isValidForNavigation() -> Bool {
         let adultCountValue = Int(adultCount.text ?? "0") ?? 0
-        let childCountValue = Int(childCount.text ?? "0") ?? 0
-        return adultCountValue > 0 || childCountValue > 0
+        return adultCountValue > 0
     }
     
     // Navigates to the payment screen
